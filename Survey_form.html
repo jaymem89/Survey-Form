@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster" />
+
+  <head>
+
+    <style>
+
+    .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+    .white-box {
+    background-color: white;
+    padding: 10px 50px 50px 50px;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  body{
+    background-color:green;
+  }
+
+  .smaller-image{
+    width: 100px;
+  }
+
+  h2{
+    font-size:30px;
+  }
+
+  .bold{
+    font-weight: bold;
+  }
+
+  .red-text{
+    color:red;
+  }
+
+  .white-text{
+    color: white;
+  }
+
+  .font{
+    font-family: Lobster, monospace;
+    font-size:30px;
+  }
+
+  h1{
+    background-color:black;
+    padding:20px 20px 20px 20px
+  }
+
+    </style>
+
+  </head>
+
+<body>
+
+  <h1 id="title" class="white-text" align=center>Survey Form</h1>
+
+  <div class="box white-box"
+
+
+     <a href="#"><img class="smaller-image" src="http://getdrawings.com/cliparts/nfl-logo-clipart-10.png" alt="NFL logo"></a>
+
+     <form id="survey-form">
+
+  <p id="description" class="font">Let us know which NFL team you think will win the super bowl in 2019</p>
+
+  <label id="name-label">First Name: <input id="name" type="text" placeholder="Enter your Name here" required>
+
+    <label id="email-label">email: <input id="email" type="email" placeholder="Enter your email here" required>
+
+      <label id="number-label">Zip:<input id="number" type="number" min="00000" max="99999" placeholder="Zip Code" required></p>
+
+        <p>Select the age range that you fall under:</p>
+
+        <select id="dropdown">
+          <option value="-20">-20</option>
+          <option value="21-30">21-30</option>
+          <option value="31-40">31-40</option>
+          <option value="50+">50+</option>
+        </select>
+
+        <p> How often do you watch the season?</p>
+        <label><input type="checkbox" name="option1" value="option">Never miss a game</label>
+        <label><input type="checkbox" name="option2" value="option">I watch when I can</label>
+        <label><input type="checkbox" name="option3" value="option">barely watch</label>
+        <label><input type="checkbox" name="option4" value="option">never</label>
+
+        <h2>Select your <span class="bold red-text">Team</h2>
+
+          <div class="column">
+
+            <label><input type="radio" name="team" value="team" checked>Eagles</label>
+            <label><input type="radio" name="team" value="team">Cowboys</label>
+            <label><input type="radio" name="team" value="team">Seahawks</label>
+            <label><input type="radio" name="team" value="team">Redskins</label>
+            <label><input type="radio" name="team" value="team">Colts</label>
+            <label><input type="radio" name="team" value="team">Patriots</label>
+            <label><input type="radio" name="team" value="team">Packers</label>
+            <label><input type="radio" name="team" value="team">Giants</label>
+            <label><input type="radio" name="team" value="team">Raiders</label>
+            <label><input type="radio" name="team" value="team">Steelers</label>
+            <label><input type="radio" name="team" value="team">Vikings</label>
+            <label><input type="radio" name="team" value="team">49ers</label>
+            <label><input type="radio" name="team" value="team">Bears</label>
+            <label><input type="radio" name="team" value="team">Broncos</label>
+
+          </div>
+
+          <div class="column"
+
+     <label><input type="radio" name="team" value="team">Cardinals</label>
+     <label><input type="radio" name="team" value="team">Panthers</label>
+     <label><input type="radio" name="team" value="team">Jets</label>
+     <label><input type="radio" name="team" value="team">Lions</label>
+     <label><input type="radio" name="team" value="team">Bills</label>
+     <label><input type="radio" name="team" value="team">Saints</label>
+     <label><input type="radio" name="team" value="team">Rams</label>
+     <label><input type="radio" name="team" value="team">Texans</label>
+     <label><input type="radio" name="team" value="team">Falcons</label>
+     <label><input type="radio" name="team" value="team">Ravens</label>
+     <label><input type="radio" name="team" value="team">Chiefs</label>
+     <label><input type="radio" name="team" value="team">Chargers</label>
+     <label><input type="radio" name="team" value="team">Dolphins</label>
+     <label><input type="radio" name="team" value="team">Bengals</label>
+     <label><input type="radio" name="team" value="team">Jaguars</label>
+     <label><input type="radio" name="team" value="team">Titans</label>
+     <label><input type="radio" name="team" value="team">Buccaneers</label>
+  </div>
+
+    <p> <textarea name="comment" form="usrform">Enter text here...</textarea></p>
+
+    </form>
+
+      <p><button type="submit" id="submit">Submit</button></p>
+    </div>
+
+</body>
